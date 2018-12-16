@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Animals Game</title>
+
+  <!-- Bootstrap CDN -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <!-- Cabin Sketch Font -->
+  <link href="https://fonts.googleapis.com/css?family=Unlock" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+ 
+</head>
+
+<body>
+    
+    <div class="container main rounded my-3 py-3">
+        <div class="row ">
+            <h1 class="cabin mx-auto">Animal Quiz Game</h1>
+        </div>
+        
+        <div class="row">
+                    <h5 id="question" class="cabin2 card card-body rounded-left text-center"></h5>
+
+        </div>
+        <div class="row">
+          <div class="col-md-6 text-right">
+              <img id="animalImg" class ="imagehold rounded-circle my-2"></img>
+          </div>
+          <div class="col-md-5 text-left">
+            <div id="scorer" class="cabin4 rounded-right my-2">
+              <p id="QuestionNumber" class="cabin"></p>
+              <p id="Correctanswers" class="cabin" style="color:green;"></p>
+              <p id="WrongAnswers" class="cabin" style="color:blue;"></p>
+              <p id="Timer" class="cabin"></p>
+            </div>
+          </div>
+        </div>
+       
+        <div id="answerdiv" class='row text-center' >
+            <div id="mask"></div>
+            <h5 class="cabin3 answers rounded" id="a1" data-index="0"></h5>
+            <h5 class="cabin3 answers rounded" id="a2" data-index="1"></h5>
+            <h5 class="cabin3 answers rounded" id="a3" data-index="2"></h5>
+            <h5 class="cabin3 answers rounded" id="a4" data-index="3"></h5>
+            <h5 id="explain" class = "cabin3 my-2" style="border: 5px solid black"></h5>
+        </div>
+        
+
+    </div>
+  <!-- jQuery CDN -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+
+  <!-- Bootstrap JavaScript CDN -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
+  <script src="js/game.js"></script>
+</body>
+
+</html>
